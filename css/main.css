@@ -14,6 +14,12 @@ button::-moz-focus-inner
 	border: 0;
 }
 
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 #cross
 {
 	height: 14px;
@@ -101,6 +107,34 @@ button::-moz-focus-inner
 	margin-top: -40px;
 }
 
+.toc
+{
+	margin-top: 1em;
+	border: 1px solid gray;
+	padding: 1em;
+	width: 100%;
+}
+
+.toc h3
+{
+	text-align: center;
+}
+
+.toc-link
+{
+
+}
+
+.toc-description:before
+{
+	content: " - ";
+}
+
+.toc-description
+{
+	font-size: 0.9em;
+}
+
 /*Sections*/
 .section
 {
@@ -128,15 +162,28 @@ button::-moz-focus-inner
 	margin-left: 25px;
 }
 
-.section .links a:after
+.links a:after
 {
 	content: ",";
 }
 
-.section .links a:last-child:after
+.links a:last-child:after
 {
 	content: "";
 }
+
+.stacked-card
+{
+	float: left;
+	width: 48%;
+	margin: 20px;
+	margin-bottom: 10px;
+	max-width: 500px;
+	border: solid 1px;
+	padding: 1.25em 1.5em 1.25em 1.5em;
+	box-shadow: -4px -4px white, -5px -5px gray, -5px -3px gray, -3px -5px gray;
+}
+
 
 /*Misc*/
 .color-gray
@@ -146,6 +193,7 @@ button::-moz-focus-inner
 
 a.color-gray:hover
 {
+	color: gray;
 	text-decoration: underline;
 }
 
@@ -157,4 +205,12 @@ a.color-gray:hover
 .bold
 {
 	font-weight: bold;
+}
+
+@media print
+{
+	.hidden-for-print
+	{
+		visibility: hidden;
+	}
 }
