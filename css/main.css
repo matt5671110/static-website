@@ -38,7 +38,7 @@ button::-moz-focus-inner
 	display: inline;
 }
 
-.header h1
+.header h1,h2,h3
 {
 	display: inline;
 	vertical-align: middle;
