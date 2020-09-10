@@ -186,6 +186,11 @@ button::-moz-focus-inner
 	box-shadow: -4px -4px white, -5px -5px gray, -5px -3px gray, -3px -5px gray;
 }
 
+.verse
+{
+	background: #fffff5;
+}
+
 blockquote
 {
 	background: #f5f5f5;
@@ -211,14 +216,14 @@ blockquote p
 	font-style: italic;
 }
 
-blockquote p:first-of-type:before
+/*blockquote p:first-of-type:before
 {
 	content: '\201c';
 }
 blockquote p:last-of-type:after
 {
 	content: '\201d';
-}
+}*/
 
 blockquote cite
 {
