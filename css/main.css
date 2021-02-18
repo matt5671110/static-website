@@ -181,15 +181,21 @@ button::-moz-focus-inner
 	height: 2in;
 /*	margin: 20px;
 	margin-bottom: 10px;*/
+	margin: 0 auto;
+	max-width: 500px;
+	border: 1px solid;
+	padding: 1.25em 1.5em 1.25em 1.5em;
+	box-shadow: -4px -4px white, -5px -5px gray, -5px -3px gray, -3px -5px gray;
+}
+
+.completely-centered
+{
 	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	max-width: 500px;
-	border: 1px solid;
-	padding: 1.25em 1.5em 1.25em 1.5em;
-	box-shadow: -4px -4px white, -5px -5px gray, -5px -3px gray, -3px -5px gray;
+	text-align: center;
 }
 
 .stacked-card table tr
