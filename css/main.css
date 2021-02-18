@@ -176,12 +176,16 @@ button::-moz-focus-inner
 
 .stacked-card
 {
-	float: left;
 	/*width: 48%;*/
 	width: 3.5in;
 	height: 2in;
-	margin: 20px;
-	margin-bottom: 10px;
+/*	margin: 20px;
+	margin-bottom: 10px;*/
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	max-width: 500px;
 	border: 1px solid;
 	padding: 1.25em 1.5em 1.25em 1.5em;
