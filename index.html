@@ -1,55 +1,44 @@
 <!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="A website">
-	<title>Website</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="stylesheet" type="text/css" href="css/sheets-of-paper-usletter.css" />
-</head>
-<body class="document">
-	<div class="page">
-		<div class="header">
-			<h1>Welcome</h1>
-			<a name="Welcome"></a>
-		</div>
-		<hr class="tapered-hr" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 
-		<div class="stacked-card">
-			<strong style="font-size: x-large;">Matthew Turner</strong>
-			<br />
-			<small>Programmer</small>
-			<hr />
-			<table>
-				<tr>
-					<td><small>Email: </small></td>
-					<td><span><a href="mailto:<redacted>"><redacted></a></span></td>
-				</tr>
-				<tr>
-					<td><small>Phone: </small></td>
-					<td><span>(719)337-2184</span></td>
-				</tr>
-				<tr>
-					<td><small>Website: </small></td>
-					<td><span><a href="https://matthewturner.io">matthewturner.io</a></span></td>
-				</tr>
-			</table>
-		</div>
-		<h3 class="completely-centered color-gray">
-			This page left intentionally <div class="tooltip">blank<span class="tooltip-text">Mostly ...</span></div>
-		</h3>
-		<!-- Footer -->
-		<footer>
-			<hr class="tapered-hr" />
-			<span>&copy; 2021 Matthew Turner</span>
-			<div class="tooltip">
-				<img id="cross" src="img/cross.svg" alt="Colossians 3:17" />
-				<span class="tooltip-text">And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him.<br/><span style="float: right">Colossians 3:17(NIV)</span></span>
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="css/main.css">
+
+		<title>Matthew Turner</title>
+	</head>
+	<body class="bg-dark text-light font-monospace">
+		<div class="container">
+			<header class="py-4 mx-2">
+				<div class="d-flex flex-column flex-lg-row">
+					<ul class="nav terminal-nav">
+						<li><a href="#" class="text-info">matt@matthewturner.io</a><span>:</span><a href="#" class="text-info">~</a><span class="ps-3">λ</span></li>
+					</ul>
+					<ul class="nav ms-lg-auto">
+						<li><a href="#" class="nav-link text-secondary">/about</a></li>
+						<li><a href="#" class="nav-link text-secondary">/projects</a></li>
+					</ul>
+				</div>
+			</header>
+
+			<div class="row">
+				<h1 class="fs-3">About</h1>
+				<p>This is some text</p>
 			</div>
-		</footer>
-	</div>
-</body>
+			<hr>
+			<div class="row">
+				<h1 class="fs-3">Projects</h1>
+				<p>This is some more text</p>
+			</div>
+
+			<footer class="border-top border-secondary py-2 mx-2">
+				<span>&copy; 2020-2021 Matthew Turner</span>
+			</footer>
+		</div>
+	</body>
 </html>
