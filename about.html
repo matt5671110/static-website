@@ -13,19 +13,59 @@
 		<title>Matthew Turner</title>
 	</head>
 	<body class="bg-dark text-light font-monospace">
-		<p class="terminal-diagram">
+		<div class="container">
+			<div class="mx-lg-5 px-lg-5">
+				<header class="py-4">
+					<div class="d-flex flex-column flex-lg-row">
+						<ul class="nav terminal-nav">
+							<li><a href="index.html" class="text-decoration-none text-warning">matt@matthewturner.io</a><span>:</span><a href="index.html" class="text-decoration-none text-info">~</a><span class="text-info">/</span><a href="about.html" class="text-decoration-none text-info">about</a><span class="ps-2">λ</span></li>
+						</ul>
+						<ul class="nav ms-lg-auto">
+							<li><a href="index.html" class="nav-link text-secondary">../</a></li>
+							<li><a href="#" class="nav-link text-secondary">../projects/</a></li>
+						</ul>
+					</div>
+				</header>
+
+				<div class="row">
+					<h2 class="fs-5 terminal-header">About</h2>
+					<p>Always interested in how everything works; wants to understand everything, with a particular interest in <strong>computer programming</strong> and <strong>game development</strong>. I also enjoy exploring new trails and seeing nature while driving or riding a motorcycle.</p>
+					<p>I have a diverse set of experience from working in multiple industries. For example, I interned for the IT office at my high school, worked in customer service at Walmart, and am currently receiving a wide variety of experience working for El Paso County Parks. At the parks I do everything from janitorial work, to operating equipment, to felling trees, to diagnosing and repairing irrigation and electrical problems, and so much more. I truly enjoy the diversity of work, and I always love having the opportunity to learn new skills.</p>
+					<p>Besides my job, I currently spend a lot of time tinkering and making electronic things. I have recently gotten into programming microcontrollers and I have been having a blast thinking of all the cool things that can be done with them. For the time being, I am trying to interface a microcontroller with an e-ink display. I want to make it give me an offline verse of the day and put it in a picture frame. I also recently made a weather station by connecting a bunch of sensors to a Raspberry Pi computer. The weather station serves a web page with its current info and some historical charts. I have yet to finish all the features I want for that project, so that consumes some of my time as well.</p>
+					<p>Learning new concepts is always really fun and exciting for me. I like to understand how things work, how things are made, and what are the natural processes that make the world we live in so interesting. Basically, I am fascinated with engineering and science. I love exploring and learning all about this incredible world God gave us.</p>
+				</div>
+
+				<p class="terminal-diagram">
 ┌───────────────────────────────────┐
 │ Matthew Turner                    │
 │ ───────────────────────────────── │
 │                                   │
-│ Email:   <a href="mailto:<redacted>" class="text-info"><redacted></a>       │
+│ Email:   <a href="mailto:<redacted>" class="terminal-link"><redacted></a>       │
 │                                   │
-│ Phone:   <a href="tel:719-337-2184" class="text-info">(719)337-2184</a>            │
+│ Phone:   <a href="tel:719-337-2184" class="terminal-link">(719)337-2184</a>            │
 │                                   │
-│ Website: <a href="https://matthewturner.io/" class="text-info">matthewturner.io</a>         │
+│ Website: <a href="https://matthewturner.io/" class="terminal-link">matthewturner.io</a>         │
 │                                   │
 │                                   │
 └───────────────────────────────────┘
-		</p>
+				</p>
+
+				<footer class="border-top border-secondary py-2">
+					<span>&copy; 2020-2021 Matthew Turner</span>
+					<img src="img/light_cross.svg" alt="cross" height="14" data-bs-toggle="tooltip" data-bs-template='<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner text-start"></div></div>' data-bs-html="true" title='<span>And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him.</span><br><span class="ps-5">Colossians 3:17(NIV)</span>'>
+				</footer>
+			</div>
+		</div> <!-- container -->
+
+		<!-- bootstrap -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<!-- initialize tooltips -->
+		<script type="text/javascript">
+			// Initialize Tooltips
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			  return new bootstrap.Tooltip(tooltipTriggerEl)
+			})
+		</script>
 	</body>
 </html>

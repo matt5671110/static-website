@@ -45,3 +45,21 @@
 	white-space: pre;
 	line-height: normal;
 }
+
+.nav-link.terminal-link {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	padding: 0;
+}
+
+.terminal-link {
+	color: #0dcaf0;
+	width: auto;
+}
+
+.terminal-link:hover {
+	background-color: #0dcaf0;
+	color: #fff;
+}
