@@ -17,3 +17,31 @@
 	animation-direction: alternate;
 	animation-iteration-count: 20;
 }
+
+.terminal-header {
+	position: relative;
+	overflow: hidden;
+	width: auto;
+	line-height: 3.5rem;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: calc(var(--bs-gutter-x) * .5);
+	margin-right: calc(var(--bs-gutter-x) * .5);
+}
+
+.terminal-header::after {
+	content:  "========";
+	position: absolute;
+	bottom: -1.5rem;
+	left: 0;
+}
+
+.terminal-hr {
+	background: none;
+	border-top: 1px dashed #f8f9fa;
+}
+
+.terminal-diagram {
+	white-space: pre;
+	line-height: normal;
+}
