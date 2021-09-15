@@ -15,5 +15,5 @@
 	animation-name: cursor_blink;
 	animation-duration: 0.75s;
 	animation-direction: alternate;
-	animation-iteration-count: 8;
+	animation-iteration-count: 20;
 }
