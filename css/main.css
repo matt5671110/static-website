@@ -27,10 +27,11 @@
 	padding-right: 0;
 	margin-left: calc(var(--bs-gutter-x) * .5);
 	margin-right: calc(var(--bs-gutter-x) * .5);
+	font-weight: 700;
 }
 
 .terminal-header::after {
-	content:  "========";
+	content:  "==========";
 	position: absolute;
 	bottom: -1.5rem;
 	left: 0;
@@ -39,6 +40,22 @@
 .terminal-hr {
 	background: none;
 	border-top: 1px dashed #f8f9fa;
+}
+
+.terminal-list {
+	list-style-type: none;
+	font-weight: 700;
+}
+
+.terminal-list ul {
+	list-style-type: none;
+	font-weight: initial;
+	padding: revert;
+}
+
+.terminal-list ul li::before {
+	content: "-";
+	padding-right: 0.5rem;
 }
 
 .terminal-diagram {
