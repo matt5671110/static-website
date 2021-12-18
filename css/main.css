@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
+@import url('cousine.css');
 
 @keyframes cursor_blink {
 	0%   {opacity: 0}
