@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Matthew Turner">
+		<meta name="description" content="Always interested in how everything works; wants to understand everything, with a particular interest in computer programming and game development.">
+
+		<!-- OpenGraph Meta Tags -->
+		<meta name="og:title" content="Matthew Turner">
+		<meta name="og:description" content="Always interested in how everything works; wants to understand everything, with a particular interest in computer programming and game development.">
+		<meta name="og:type" content="website">
+		<meta name="og:url" content="https://matthewturner.io/">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="/css/main.css">
+
+		<title>Matthew Turner - First Post</title>
+	</head>
+	<body class="bg-dark text-light font-monospace">
+		<div class="container">
+			<div class="mx-lg-5 px-lg-5">
+				<header class="py-4">
+					<div class="d-flex flex-column flex-xl-row">
+						<ul class="nav terminal-nav my-xl-auto">
+							<li><a href="/index.html" class="text-decoration-none text-warning d-inline d-md-none">mt</a><a href="/index.html" class="text-decoration-none text-warning d-none d-md-inline">matt@matthewturner.io</a><span>:</span><a href="/index.html" class="text-decoration-none text-info">~</a><span class="text-info">/</span><a href="/posts.html" class="text-decoration-none text-info">posts</a><span class="text-info">/</span><a href="/posts/2023-01-08-first-post.html" class="text-decoration-none text-info">2023-01-08-first-post</a>
+<span class="ps-2">λ</span></li>
+						</ul>
+						<ul class="nav ms-xl-auto">
+							<li><a href="/index.html" class="nav-link text-secondary" title="home">~/</a></li>
+<li><a href="/about.html" class="nav-link text-secondary">~/about/</a></li>
+<li><a href="/projects.html" class="nav-link text-secondary">~/projects/</a></li>
+<li><a href="/posts.html" class="nav-link text-secondary">~/posts/</a></li>
+						</ul>
+					</div>
+				</header>
+
+				<main>
+				<div class="mb-4"><small class="text-secondary">Written by Matthew Turner on 2023-01-08</small></div>
+
+<h1>First Post</h1>
+<p>Hello there everyone! I finally did it. I made a post on my website that has been up for years. I never really knew what I wanted this site to be exactly, and I still don't know what it is, but for a long time, I've just been maintaining this site manually, and I knew that there had to be a better way. "But Matthew!" I hear you cry in my totally-non-delusional mind, "This site hasn't changed since it was put up." Well, you'd be right except for one thing, <em>mostly</em>. The copyright date at the bottom of the page. Yep, every year (or so &mdash; if I thought of it) I was manually changing the copyright date on every single page individually (all three of them!). This year, the year of our Lord 2023, I decided I've had enough of that!</p>
+<p>So, I wrote a tiny bit of code that allows me to build my website from templates. It took all of a couple of hours, like fifty-ish lines of Python, and the amazing <a href="https://pypi.org/project/Jinja2/" title="Jinja2 on PyPI">Jinja2</a> library to do all the work for me. And voilà I am now able to change my copyright date in a single file, run a simple script and <strong>BAM</strong> my whole site is updated. It was around this time I learned that there are several existing site generators that have really cool features for things like make blog posts and other such nonsense. One that stood out to me in particular is called <a href="https://jekyllrb.com/">Jekyll</a>. It allows you to write posts in <a href="https://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a>, and it converts those posts to HTML and crams them into a template of your choosing along with some metadata (basically). I thought "wow that's neat" and so instead of actually <em>using</em> Jekyll I crudely made my own <em>vaguely-similar-in-some-ways-but-with-a-lot-less-features</em> thing. Several more hours, another hundred-ish lines of Python, the wonderful <a href="https://pypi.org/project/Markdown/" title="Python Markdown on PyPI">Python Markdown</a> library to do all the work for me, and <strong>BOOM</strong> now I can write posts using Markdown, and they end up on my site in all the right places. If you're interested, you can view the entire source for this website <a href="https://github.com/matt5671110/static-website-generator" title="My static site generator on GitHub">here</a>. Take a look at <a href="https://github.com/matt5671110/static-website-generator/blob/main/generator.py"><code>generator.py</code></a> if you're just interested in how the final pages are actually generated from the templates.</p>
+<p>It's so easy to use that I'm actually using it. Well, it remains to be seen how many posts I will actually write, but there are a few topics I've been wanting to share some thoughts about. I may write about collecting <em>NOAA satellite images</em> (from SPACE!) using a cheap software defined radio and a bunny-ear antenna. Or I may share my recently broadened understanding of <em>Separating Axis Theorem</em> as it relates to collision detection when you're writing video games from scratch. Maybe I will just have an urge to rant about whatever is going on in the world at the moment. All of these things may or may not end up on this site at some point. And sure, some of these topics have already been discussed to death on the internet, but I've never been one to leave a dead horse unbeaten. Also, maybe I have a fresh perspective that could be helpful to some, or perhaps it will just serve to help me remember what I've learned.</p>
+<h3>So Long, For Now</h3>
+<p>Whoever you are, and wherever you are, I hope you have a wonderful day. This isn't related to anything you just read about, but I want to leave you with a bit of music. Both because it is good, and because many of the people I've met need to hear it. So remember to <a href="https://youtu.be/sYiM-sOC6nE" title="The Music">Be Kind To Yourself</a>.</p>
+
+<div class="mt-2">
+<small class="text-secondary">Tags:</small>
+<ul class="list-inline text-secondary me-auto ps-3">
+		<li class="list-inline-item">[markdown]</li>
+		<li class="list-inline-item">[python]</li>
+		<li class="list-inline-item">[ramble]</li>
+		<li class="list-inline-item">[static-site-generator]</li>
+	</ul>
+
+<small class="text-secondary">Description:</small>
+<p class="text-secondary ms-4">
+	This is the first post on my website that is testing out my home-made static site generator. I already think having a separate description was a bad idea and I need to find a way to pull an excerpt from the post automatically. Anyway, this is how it is for now and inside this post you will find lots of rambling and meandering thoughts for your reading pleasure (or whatever). Enjoy!
+</p>
+</div>
+
+				</main>
+
+				<footer class="border-top border-secondary py-2">
+					<span>&copy; 2020-2023 Matthew Turner</span>
+					<img src="/img/light_cross.svg" alt="cross" height="14" data-bs-toggle="tooltip" data-bs-template='<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner text-start"></div></div>' data-bs-html="true" title='<span>And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him.</span><br><span class="ps-5">Colossians 3:17(NIV)</span>'>
+				</footer>
+			</div>
+		</div> <!-- container -->
+
+		<!-- bootstrap -->
+		<script src="/js/bootstrap.bundle.min.js"></script>
+		<!-- initialize tooltips -->
+		<script>
+			// Initialize Tooltips
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			  return new bootstrap.Tooltip(tooltipTriggerEl)
+			})
+		</script>
+		<!--
+			    _/    _/            _/  _/
+			   _/    _/    _/_/    _/  _/    _/_/
+			  _/_/_/_/  _/_/_/_/  _/  _/  _/    _/
+			 _/    _/  _/        _/  _/  _/    _/
+			_/    _/    _/_/_/  _/  _/    _/_/
+
+
+
+			   _/      _/                                      _/
+			_/_/_/_/  _/_/_/      _/_/    _/  _/_/    _/_/    _/
+			 _/      _/    _/  _/_/_/_/  _/_/      _/_/_/_/  _/
+			_/      _/    _/  _/        _/        _/
+			 _/_/  _/    _/    _/_/_/  _/          _/_/_/  _/
+		-->
+	</body>
+</html>
