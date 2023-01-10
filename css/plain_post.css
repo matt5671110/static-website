@@ -1,0 +1,9 @@
+p a {
+	color: #0dcaf0;
+	width: auto;
+}
+
+p a:hover {
+	background-color: #0dcaf0;
+	color: #fff;
+}
