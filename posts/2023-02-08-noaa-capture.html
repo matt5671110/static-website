@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Matthew Turner">
-<meta name="description" content="The National Oceanic and Atmospheric Administration (NOAA) owns and operates a number of satellites in orbit around earth. These satellites serve a number of different purposes, ranging from weather monitoring and prediction to helping search and rescue teams locate distress signals from emergency beacons. A group of these satellites known as Polar Operational Environmental Satellites (POES) remain in a low polar orbit — that is, their orbit goes north-south over the poles. This allows the satellites to get a complete view of earth every day as earth rotates underneath them.">
+<meta name="description" content="Learn about NOAA satellites, software defined radio, and automatically capturing satellite images.">
 
 		<!-- OpenGraph Meta Tags -->
 		<meta property="og:site_name" content="Matthew Turner">
@@ -165,7 +165,7 @@ You have the latest version available
 <p><code>sudo chown USERNAME /opt/schedule_satellites</code></p>
 <p>Replace USERNAME with your username.</p>
 <h4>Create schedule_all.sh</h4>
-<p>Then, using your favorite text editor, create a new file in /opt/schedule_satellites/ called <strong>schedule_all.sh</strong><br>
+<p>Then, using your favorite text editor, create a new file in /opt/schedule_satellites/ called <strong>schedule_all.sh</strong><br />
 and put the following code into the file:</p>
 <pre><code>#!/bin/bash
 
@@ -201,7 +201,7 @@ grep "NOAA 19" weather.txt -A 2 &gt;&gt; noaa.tle
 dir=$(cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")" &amp;&amp; pwd -P)
 cd "$dir"
 </code></pre>
-<p>That just ensures that that working directory is the same directory the script resides in, no matter how the script is called. This allows me to use relative paths like <code>./schedule_satellite.sh</code> instead of absolute paths like <code>/opt/schedule_satellites/schedule_satellite.sh</code>.<br>
+<p>That just ensures that that working directory is the same directory the script resides in, no matter how the script is called. This allows me to use relative paths like <code>./schedule_satellite.sh</code> instead of absolute paths like <code>/opt/schedule_satellites/schedule_satellite.sh</code>.<br />
 Next, output folders are created if they don't already exist. My scripts save the generated image, the Two Line Element (TLE) data used, and the raw recorded audio received during a capture.</p>
 <pre><code>#Make output directories if they don't exist
 [ -d images ] || mkdir images
@@ -291,7 +291,7 @@ do
     true_end_timestamp=`echo ${TRUE_PREDICTION_END} | cut -d " " -f 1`
 done
 </code></pre>
-<p>This script ended up being fairly complicated, so I'm not going to go through each part of it. Basically, it loops through each pass for the given satellite and schedules a command to run at the start of each pass if it meets some criteria. Compared to the script from <a href="https://www.instructables.com/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/">the tutorial</a>, there are many changes. I fixed some issues with the syntax provided to the date command, which gave incorrect results in some places.<br>
+<p>This script ended up being fairly complicated, so I'm not going to go through each part of it. Basically, it loops through each pass for the given satellite and schedules a command to run at the start of each pass if it meets some criteria. Compared to the script from <a href="https://www.instructables.com/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/">the tutorial</a>, there are many changes. I fixed some issues with the syntax provided to the date command, which gave incorrect results in some places.<br />
 I also added some variables you can change to your liking: </p>
 <pre><code>#Variables
 readonly min_elevation=25            #Satellites that don't reach this elevation will be ignored
@@ -471,7 +471,7 @@ WantedBy=timers.target
 
 <small class="text-secondary">Description:</small>
 <p class="text-secondary ms-4">
-	The National Oceanic and Atmospheric Administration (NOAA) owns and operates a number of satellites in orbit around earth. These satellites serve a number of different purposes, ranging from weather monitoring and prediction to helping search and rescue teams locate distress signals from emergency beacons. A group of these satellites known as Polar Operational Environmental Satellites (POES) remain in a low polar orbit — that is, their orbit goes north-south over the poles. This allows the satellites to get a complete view of earth every day as earth rotates underneath them.
+	Learn about NOAA satellites, software defined radio, and automatically capturing satellite images.
 </p>
 </div>
 
